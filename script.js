@@ -50,3 +50,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const themes = ['light', 'halloween'];
+
+    applyRandomTheme();
+
+ 
+
+    function applyRandomTheme() {
+        const randomTheme = themes[Math.floor(Math.random() * themes.length)];
+        document.documentElement.setAttribute('data-theme', randomTheme);
+    }
+});
