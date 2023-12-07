@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
     <title>Site Aléatoire avec Couleurs Pastel</title>
 </head>
-<body>
+<body id="change">
 
     <header>
         <h1>Titre du Site</h1>
@@ -18,7 +19,15 @@
         <a href="#">Services</a>
         <a href="#">Contact</a>
     </nav>
-
+<nav>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label>
+        <em>Switch</em>
+      </div>
+</nav>
     <section>
         <h2>Section 1</h2>
         <p>Contenu de la section 1...</p>
@@ -33,5 +42,7 @@
     <footer>
         <p>&copy; 2023 - Votre Nom</p>
     </footer>
+
+
 </body>
 </html>

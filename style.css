@@ -1,3 +1,26 @@
+
+
+        
+            :root {
+                --font-color: #080606;
+                --btn-color: #349250;
+                --font-color: #FFE6C7;
+                --bg-color1: #c7bbc3;
+                --bg-color2: #3cafc1;
+            }  
+            
+        [data-theme="halloween"] {
+            --font-color: #454545;
+            --btn-color: #FF6000;
+            --font-color: #FFE6C7;
+            --bg-color1: #9E4784;
+            --bg-color2: #643A6B;
+        }
+        
+    
+        
+        
+
 [data-theme="XMAS"] {
     --primary-color: #FF0303;
     --secondary-color: hsl(102, 68%, 29%);
@@ -12,30 +35,31 @@
        
        
        body {
+
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
             transition: background-color 0.5s;
-            background-color: #f0f0f0; /* Couleur de fond par défaut */
+            background-color: var(--bg-color2); /* Couleur de fond par défaut */
         }
 
         header {
-            background-color: #BFD3C1; /* Couleur de fond pour l'en-tête */
+            background-color: var(--bg-color1); /* Couleur de fond pour l'en-tête */
             color: white;
             padding: 1em 0;
             text-align: center;
         }
 
         nav {
-            background-color: #F0D9D3; /* Couleur de fond pour la barre de navigation */
+            background-color: var(--bg-color2); /* Couleur de fond pour la barre de navigation */
             overflow: hidden;
         }
 
         nav a {
             float: left;
             display: block;
-            color: white;
+            color: var(--font-color);
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
@@ -43,7 +67,7 @@
         }
 
         nav a:hover {
-            background-color: #D4A5A5; /* Couleur de fond au survol pour les liens de navigation */
+            background-color: var(--btn-color); /* Couleur de fond au survol pour les liens de navigation */
             color: black;
         }
 
@@ -51,13 +75,13 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #D3E0BD; /* Couleur de fond pour les sections */
+            background-color: var(--bg-color2); /* Couleur de fond pour les sections */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             transition: background-color 0.5s;
         }
 
         h2 {
-            color: #BFD3C1; /* Couleur du texte pour les titres de section */
+            color: var(--font-color); /* Couleur du texte pour les titres de section */
         }
 
         p {
@@ -73,3 +97,61 @@
             bottom: 0;
             width: 100%;
         }
+
+
+
+
+
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 0;
+          }
+          
+          /*slider switch css */
+          .theme-switch-wrapper {
+            display: flex;
+            align-items: center;
+            
+            em {
+              margin-left: 10px;
+              font-size: 1rem;
+            }
+          }
+          .theme-switch {
+            display: inline-block;
+            height: 34px;
+            position: relative;
+            width: 60px;
+          }
+          
+          .theme-switch input {
+            display:none;
+          }
+          
+          .slider {
+            background-color: #ccc;
+            bottom: 0;
+            cursor: pointer;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: .4s;
+          }
+          
+          .slider:before {
+            background-color: #fff;
+            bottom: 4px;
+            content: "";
+            height: 26px;
+            left: 4px;
+            position: absolute;
+            transition: .4s;
+            width: 26px;
+          }
+          
+          input:checked + .slider {
+            background-color: #66bb6a;
+          }
