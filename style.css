@@ -27,9 +27,19 @@
             --font-color:#D71313;
             --bg-color1:#F0DE36;
             --bg-color2:#9ADE7B;
-            --img-src:"./images/xmas.jpg"
+            --img-src:url("./images/xmas.jpg");
             
         
+}
+[data-theme="cinema"] {
+    --font-color: #090a08;
+    --btn-color: #302f2f;
+    --font-color:#fff;
+    --bg-color1:#1b1b17;
+    --bg-color2:#080808;
+    --img-src:url("./images/cinema.jpg");
+    
+
 }
        
        
