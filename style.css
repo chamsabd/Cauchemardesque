@@ -15,6 +15,7 @@
             --font-color: #FFE6C7;
             --bg-color1: #9E4784;
             --bg-color2: #643A6B;
+            --img-src:url("./images/hlwn.jpg")
         }
         
     
@@ -110,18 +111,25 @@
             width: 100%;
         }
 
+img{
+    content: var(--img-src);
+    float: right; /* ou float: right; selon votre préférence */
+    margin-right: 20px; /* Espace entre l'image et le texte */
+    margin-bottom: 10px;
+    width: 20%;
+    height: 40%;
+}
 
 
 
 
-
-        nav {
+        /* nav {
             display: flex;
             justify-content: flex-end;
             padding: 20px 0;
           }
           
-          /*slider switch css */
+         
           .theme-switch-wrapper {
             display: flex;
             align-items: center;
@@ -166,4 +174,4 @@
           
           input:checked + .slider {
             background-color: #66bb6a;
-          }
+          } */
