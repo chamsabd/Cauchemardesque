@@ -21,13 +21,15 @@
         
         
 
-[data-theme="XMAS"] {
-    --primary-color: #FF0303;
-    --secondary-color: hsl(102, 68%, 29%);
-    --font-color:#FFE9A0;
-    --bg-color: #251616;
-    --heading-color: #a4ab81;
-    background-image: "ssss";
+        [data-theme="XMAS"] {
+            --font-color: #367E18;
+            --btn-color: #FE0000;
+            --font-color:#D71313;
+            --bg-color1:#F0DE36;
+            --bg-color2:#9ADE7B;
+            --img-src:"./images/OIP.jpg"
+            
+        
 }
        
        
