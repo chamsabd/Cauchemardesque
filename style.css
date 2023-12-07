@@ -1,0 +1,63 @@
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            transition: background-color 0.5s;
+            background-color: #f0f0f0; /* Couleur de fond par défaut */
+        }
+
+        header {
+            background-color: #BFD3C1; /* Couleur de fond pour l'en-tête */
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #F0D9D3; /* Couleur de fond pour la barre de navigation */
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.5s;
+        }
+
+        nav a:hover {
+            background-color: #D4A5A5; /* Couleur de fond au survol pour les liens de navigation */
+            color: black;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #D3E0BD; /* Couleur de fond pour les sections */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.5s;
+        }
+
+        h2 {
+            color: #BFD3C1; /* Couleur du texte pour les titres de section */
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #D3E0BD; /* Couleur de fond pour le pied de page */
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
