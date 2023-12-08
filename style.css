@@ -23,12 +23,12 @@
         
 
         [data-theme="XMAS"] {
-            --font-color: #367E18;
-            --btn-color: #FE0000;
+            --font-color: #194008;
+            --btn-color: #ee0606;
             --font-color:#D71313;
-            --bg-color1:#F0DE36;
+            --bg-color1:#3d7ff9;
             --bg-color2:#9ADE7B;
-            --img-src:"./images/xmas.jpg"
+            --img-src:url("./images/xmas.jpg")
             
         
 }
@@ -106,8 +106,8 @@ img{
     float: right; /* ou float: right; selon votre préférence */
     margin-right: 20px; /* Espace entre l'image et le texte */
     margin-bottom: 10px;
-    width: 20%;
-    height: 40%;
+    width: 30%;
+    height: 50%;
 }
 
 
@@ -165,3 +165,17 @@ img{
           input:checked + .slider {
             background-color: #66bb6a;
           } */
+
+
+          #animatedBtn {
+          padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+    position: relative;
+            /* transition: transform 0.3s ease-in-out; */
+
+        }
+        
+        #animatedBtn.active {
+            transform: translate3d(10px,20px,10px); /* Adjust the distance it moves */
+        }
