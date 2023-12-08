@@ -24,8 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
    
     
-    const themes = ['XMAS','light', 'halloween'];
-   
+
+    const themes = ['XMAS','light', 'halloween','cinema','spring','spiderman','barbie'];
+
+
     applyRandomTheme();
 
  
