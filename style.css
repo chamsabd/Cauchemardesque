@@ -15,19 +15,22 @@
             --font-color: #FFE6C7;
             --bg-color1: #9E4784;
             --bg-color2: #643A6B;
+            --img-src:url("./images/hlwn.jpg")
         }
         
     
         
         
 
-[data-theme="XMAS"] {
-    --primary-color: #FF0303;
-    --secondary-color: hsl(102, 68%, 29%);
-    --font-color:#FFE9A0;
-    --bg-color: #251616;
-    --heading-color: #a4ab81;
-    background-image: "ssss";
+        [data-theme="XMAS"] {
+            --font-color: #194008;
+            --btn-color: #ee0606;
+            --font-color:#D71313;
+            --bg-color1:#3d7ff9;
+            --bg-color2:#9ADE7B;
+            --img-src:url("./images/xmas.jpg")
+            
+        
 }
        
        
@@ -98,18 +101,25 @@
             width: 100%;
         }
 
+img{
+    content: var(--img-src);
+    float: right; /* ou float: right; selon votre préférence */
+    margin-right: 20px; /* Espace entre l'image et le texte */
+    margin-bottom: 10px;
+    width: 30%;
+    height: 50%;
+}
 
 
 
 
-
-        nav {
+        /* nav {
             display: flex;
             justify-content: flex-end;
             padding: 20px 0;
           }
           
-          /*slider switch css */
+         
           .theme-switch-wrapper {
             display: flex;
             align-items: center;
@@ -154,4 +164,19 @@
           
           input:checked + .slider {
             background-color: #66bb6a;
-          }
+          } */
+
+
+          #animatedBtn {
+            background-color: var(--bg-color1);
+          padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+    position: relative;
+            /* transition: transform 0.3s ease-in-out; */
+
+        }
+        
+        #animatedBtn.active {
+            transform: translate3d(10px,20px,10px); /* Adjust the distance it moves */
+        }
