@@ -52,9 +52,6 @@ console.log(lastTheme);
 
         
         // Replace this condition with your specific condition
-       
-            
-
 
 
         
@@ -73,3 +70,25 @@ console.log(lastTheme);
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById("avatar-container");
+  
+    function getRandomAvatarUrl() {
+      // You can replace these placeholder URLs with actual avatar image URLs
+    
+      const randomIndex = Math.floor(Math.random() * 6);
+      return "./images/av"+randomIndex+".png";
+    }
+  
+   
+      const avatar = document.createElement("div");
+      avatar.className = "avatar";
+  
+      const avatarImage = document.createElement("img");
+      avatarImage.src = getRandomAvatarUrl();
+      avatarImage.alt = "Avatar";
+  
+      avatar.appendChild(avatarImage);
+      container.appendChild(avatar);
+    
+});

@@ -140,7 +140,7 @@
             width: 100%;
         }
 
-img{
+.theme{
     content: var(--img-src);
     float: right; /* ou float: right; selon votre préférence */
     margin-right: 20px; /* Espace entre l'image et le texte */
@@ -151,7 +151,7 @@ img{
 
 
 
-
+/*
          nav {
             display: flex;
             justify-content: flex-end;
@@ -212,10 +212,26 @@ img{
           padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
+            color: var(--font-color);
     position: relative;
             /* transition: transform 0.3s ease-in-out; */
 
         }
+        #avatar-container {
+            display: grid;
+            right: auto;
+            
+            display: inline;
+            grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+            gap: 10px;
+          }
+      
+          .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow:visible;
+          }
         
         #animatedBtn.active {
             transform: translate3d(10px,20px,10px); /* Adjust the distance it moves */
