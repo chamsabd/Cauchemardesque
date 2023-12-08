@@ -22,7 +22,7 @@ let lastTheme = localStorage.getItem('lasttheme')?localStorage.getItem('lastthem
 document.addEventListener('DOMContentLoaded', function() {
 
 
-   
+    switchLanguage('fr');
     
 
     const themes = ['XMAS','light', 'halloween','cinema','spring','spiderman','barbie'];
@@ -71,5 +71,31 @@ console.log(lastTheme);
     })
 
 });
+function switchLanguage(lang) {
+    document.documentElement.setAttribute('lang-theme', lang);
+     
+}
+
+var translations = {
+    'twi': {
+        'acceuil':'Tuan Lekku',
+        'a Propos':'Vekk Okira',
+        'contact':'kora',
+        'services':'kara ',
+        'section':'sec',
+        'Contenu de la section...':'Setho Ransec', 
+        // Add other English translations
+    },
+    'fr': {
+       'Tuan Lekku': 'acceuil',
+       'Vekk Okira':'a Propos',
+        'kora':'contact',
+        'kara ':'services',
+        'sec':'section',
+        'Setho Ransec':'Contenu de la section...', 
+        // Add other French translations
+    }
+};
+
 
 

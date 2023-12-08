@@ -71,11 +71,46 @@
     --bg-color2:#f7f3f6;
     --img-src:url("./images/barbie.jpg");
 }
-           
+[lang-theme="fr"] {
+    --ac:'acceuil';
+    --prop:'a propos';
+    --contact:'contact';
+   --service: 'services';
+   --section: 'section';
+   --content: 'Contenu de la section';
+    
+}         
        
-       
-       
-       
+[lang-theme="twi"] {
+    --ac:'Tuan Lekku';
+    --prop:'Vekk Okira';
+    --contact:'kora';
+   --service: 'kara';
+   --section: 'sec';
+   --content: 'setho ransec...';
+    
+}            
+   #ac:after{
+    content: var(--ac);
+   } 
+   #prop:after{
+    content: var(--prop);
+   }    
+   #servi:after{
+    content: var(--service);
+   } 
+   #con:after{
+    content: var(--contact);
+   } 
+    .section::before{
+
+        content: var(--section);
+    } 
+    
+    .content::before{
+
+        content: var(--content);
+    }  
        body {
 
             font-family: 'Arial', sans-serif;
@@ -112,6 +147,18 @@
             background-color: var(--btn-color); /* Couleur de fond au survol pour les liens de navigation */
             color: black;
         }
+        
+        nav.language-selector {
+
+     
+            [lang="twi"] {
+                display: block;
+            }
+            
+           
+            [lang="fr"] {
+                display: none;
+            }}
 
         section {
             max-width: 800px;
@@ -152,7 +199,7 @@ img{
 
 
 
-         nav {
+      /*   nav {
             display: flex;
             justify-content: flex-end;
             padding: 20px 0;
