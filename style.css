@@ -48,7 +48,7 @@
 [data-theme="spring"] {
     --font-color: #cf8bb6;
     --btn-color: #6294d9;
-    --font-color:#ed8cc6;
+    --font-color:#0e0d0d;
     --bg-color1:#71f0c3;
     --bg-color2:#96a4ef;
     --img-src:url("./images/spring.jpg");
@@ -57,7 +57,7 @@
 [data-theme="spiderman"] {
     --font-color: #383838;
     --btn-color: #746868;
-    --font-color:#5fa5ff;
+    --font-color:#101214;
     --bg-color1:#e04646;
     --bg-color2:rgb(109, 183, 229);
     --img-src:url("./images/spiderman.jpg");
