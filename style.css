@@ -2,19 +2,19 @@
 
         
             :root {
-                --font-color: #080606;
-                --btn-color: #349250;
+                --font-color: #515050;
+                --btn-color: #61cf82;
                 --font-color: #FFE6C7;
                 --bg-color1: #c7bbc3;
-                --bg-color2: #3cafc1;
+                --bg-color2: #53bece;
             }  
             
         [data-theme="halloween"] {
-            --font-color: #454545;
-            --btn-color: #FF6000;
-            --font-color: #FFE6C7;
-            --bg-color1: #9e6347;
-            --bg-color2: rgb(107, 59, 58);
+            --font-color: #6E9086;
+            --btn-color: #ff9a5b;
+            --font-color: #FDC8B7;
+            --bg-color1: #BECA5C;
+            --bg-color2: rgb(150, 95, 94);
             --img-src:url("./images/hlwn.jpg")
         }
         
@@ -24,51 +24,51 @@
 
         [data-theme="XMAS"] {
 
-            --font-color: #1b2f13;
-            --btn-color: #FE0000;
-            --font-color:#4c1e1e;
+            --font-color: #5F6F52;
+            --btn-color: #B99470;
+            --font-color:#A6CF98;
             --bg-color1:#bdb7b7;
-            --bg-color2:#525850;
+            --bg-color2:#F4BF96;
             --img-src:url("./images/xmas.jpg");
 
             
         
 }
 [data-theme="cinema"] {
-    --font-color: #090a08;
+    --font-color: #3c4336;
     --btn-color: #302f2f;
     --font-color:#fff;
     --bg-color1:#1b1b17;
-    --bg-color2:#464343;
+    --bg-color2:#5a5757;
     --img-src:url("./images/cinema.png");
     
 
 }
 
 [data-theme="spring"] {
-    --font-color: #7e1859;
-    --btn-color: #006afe;
-    --font-color:#d71389;
-    --bg-color1:#36f0af;
-    --bg-color2:#7b8ade;
+    --font-color: #cf8bb6;
+    --btn-color: #6294d9;
+    --font-color:#0e0d0d;
+    --bg-color1:#71f0c3;
+    --bg-color2:#96a4ef;
     --img-src:url("./images/spring.jpg");
 }
 
 [data-theme="spiderman"] {
-    --font-color: #060606;
-    --btn-color: #463a3a;
-    --font-color:#131dd7;
-    --bg-color1:#be0c0c;
-    --bg-color2:rgb(27, 27, 52);
+    --font-color: #383838;
+    --btn-color: #746868;
+    --font-color:#101214;
+    --bg-color1:#e04646;
+    --bg-color2:rgb(109, 183, 229);
     --img-src:url("./images/spiderman.jpg");
 }
    
 [data-theme="barbie"] {
-    --font-color: #060606;
-    --btn-color: #e500fe;
-    --font-color:#d7135b;
+    --font-color: #ff9bf0;
+    --btn-color: #ec83f8;
+    --font-color:#f872a3;
     --bg-color1:#f80df8;
-    --bg-color2:#f7f3f6;
+    --bg-color2:#ffffa5;
     --img-src:url("./images/barbie.jpg");
 }
 [lang-theme="fr"] {
@@ -187,7 +187,7 @@
             width: 100%;
         }
 
-img{
+.theme{
     content: var(--img-src);
     float: right; /* ou float: right; selon votre préférence */
     margin-right: 20px; /* Espace entre l'image et le texte */
@@ -199,7 +199,8 @@ img{
 
 
 
-      /*   nav {
+         nav {
+
             display: flex;
             justify-content: flex-end;
             padding: 20px 0;
@@ -259,10 +260,26 @@ img{
           padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
+            color: var(--font-color);
     position: relative;
             /* transition: transform 0.3s ease-in-out; */
 
         }
+        #avatar-container {
+            display: grid;
+            right: auto;
+            
+            display: inline;
+            grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+            gap: 10px;
+          }
+      
+          .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow:visible;
+          }
         
         #animatedBtn.active {
             transform: translate3d(10px,20px,10px); /* Adjust the distance it moves */
