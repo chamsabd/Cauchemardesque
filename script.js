@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function applyRandomTheme() {
         let randomTheme;
-console.log(lastTheme);
+
         // Keep selecting a new random theme until it is different from the last one
         do {
             randomTheme = themes[Math.floor(Math.random() * themes.length)];
